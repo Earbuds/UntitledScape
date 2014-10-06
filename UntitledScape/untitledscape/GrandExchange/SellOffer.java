@@ -5,30 +5,29 @@
  *
  * Created Wednesday, 23 June, 2010
  * Created by Davidi2
-*/
+ */
 
 package untitledscape.GrandExchange;
 
 public class SellOffer {
 
-	
-	public int itemId;
+	public int itemID;
 	public int origAmount;
 	public int currAmount;
 	public int price;
 	public String owner;
 	public boolean completed;
-        public int currPrice;
-        public boolean cancelled = false;
+	public int currPrice;
+	public boolean cancelled = false;
 	public int slot;
 
 	public SellOffer(int item, int origAmount, int currAmount, int price, int slot, int completed, String owner) {
-		this.item = item;
+		this.itemID = item;
 		this.origAmount = origAmount;
 		this.currAmount = currAmount;
 		this.price = price;
 		this.owner = owner;
-		if(completed = 1) {
+		if (completed == 1) {
 			this.completed = true;
 		} else {
 			this.completed = false;
@@ -37,14 +36,14 @@ public class SellOffer {
 	}
 
 	public void updatePrice(int origAmount, boolean bool) {
-	    if(bool) {
-	        if(type == 0) {
-		    currPrice += origAmount * price;
+		if (bool) {
+			if (currAmount == 0) { // type == 0
+				currPrice += origAmount * price;
+			} else {
+				currPrice += origAmount;
+			}
 		} else {
-		    currPrice += origAmount;
+			currPrice -= origAmount;
 		}
-	    } else {
-		currPrice -= origAmount;
-	    }
 	}
 }

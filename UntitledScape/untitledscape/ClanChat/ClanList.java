@@ -1,13 +1,16 @@
 package untitledscape.ClanChat;
 
+// Fixed by Earbuds on 10/6/2014
+
 import java.util.ArrayList;
 import java.util.List;
 
 import untitledscape.Engine;
-import untitledscape.Server;
-import untitledscape.ClanChat.ClanMain;
 import untitledscape.players.Player;
 import untitledscape.util.Misc;
+
+// import untitledscape.Server;
+// import untitledscape.ClanChat.ClanMain;
 
 public class ClanList {
 
@@ -125,7 +128,7 @@ public class ClanList {
     }
 
     public void leaveChat(Player p) {
-	String s = "";
+	// String s = "";
 	for(inChat l : inChat) {
 	    if(l == null) {
 		continue;
@@ -203,7 +206,7 @@ public class ClanList {
     }
 
     public void updateFriends() throws Exception {
-        Player p = Engine.players[Server.engine.getIdFromName(Owner)];
+        Player p = Engine.players[Engine.getIdFromName(Owner)]; // Server.engine.getIdFromName(Owner)
 	if(p == null || p.disconnected[0]) {
 	    return;
 	}
@@ -247,7 +250,7 @@ public class ClanList {
 		    }
 		    p.stream.writeQWord(Misc.stringToLong(l.name));
 		    p.stream.writeWord(1);
-		    Player p3 = Engine.players[Server.engine.getIdFromName(l.name)];
+		    Player p3 = Engine.players[Engine.getIdFromName(l.name)]; // Server.engine.getIdFromName(l.name
 		    if(l.name.equals(Owner)) {
 			p.stream.writeUnsignedByte(7);
 		    } else if(p3.rights == 2) {
@@ -279,8 +282,8 @@ public class ClanList {
 	}
     }
     public void sendClanMessage(String from, String message) {
-	String var = "<";
-	Player p2 = Engine.players[Server.engine.getIdFromName(from)];
+	// String var = "<";
+	Player p2 = Engine.players[Engine.getIdFromName(from)]; // Server.engine.getIdFromName(from)
 	if(message.contains(">") || message.contains("<") || message.contains("<3")) {
 	    p2.frames.sendMessage(p2, "You're message cannot contain some variables due to crashing errors.");
 	    return;

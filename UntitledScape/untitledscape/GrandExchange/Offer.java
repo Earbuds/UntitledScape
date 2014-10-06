@@ -13,25 +13,15 @@ package untitledscape.GrandExchange;
 public class Offer {
 
 	public int id;
-	
 	public int item;
-	
 	public int amount;
-	
 	public int currentAmount;
-	
 	public int price;
-	
 	public int type;
-	
 	public String owner;
-	
 	public boolean completed;
-
-        public int currentPrice;
-
-        public boolean aborted = false;
-
+    public int currentPrice;
+    public boolean aborted = false;
 	public int slot;
 	
 	//offertype: 0 = sell, 1 = buy
