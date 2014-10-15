@@ -37,41 +37,6 @@ public class ItemOnItem implements Packet {
 		
 		Crafting.craft(itemUsed, usedWith, p, pi);
 
-		// Start of Godsword Making
-		if (itemUsed == 11702 && usedWith == 11690 || itemUsed == 11690 && usedWith == 11702) {
-			pi.deleteItem(p, 11702, pi.getItemSlot(p, 11702), 1);
-			pi.deleteItem(p, 11690, pi.getItemSlot(p, 11690), 1);
-			p.addSkillXP(100, 12);
-			pi.addItem(p, 11694, 1);
-			p.frames.sendMessage(p, "You attach the Godsword Blade and Hilt together...");
-			p.frames.sendMessage(p, "...and get an Armadyl Godsword!");
-		}
-		if (itemUsed == 11704 && usedWith == 11690 || itemUsed == 11690 && usedWith == 11704) {
-			pi.deleteItem(p, 11704, pi.getItemSlot(p, 11704), 1);
-			pi.deleteItem(p, 11690, pi.getItemSlot(p, 11690), 1);
-			p.addSkillXP(100, 12);
-			pi.addItem(p, 11696, 1);
-			p.frames.sendMessage(p, "You attach the Godsword Blade and Hilt together...");
-			p.frames.sendMessage(p, "...and get a Bandos Godsword!");
-		}
-		if (itemUsed == 11706 && usedWith == 11690 || itemUsed == 11690 && usedWith == 11706) {
-			pi.deleteItem(p, 11706, pi.getItemSlot(p, 11706), 1);
-			pi.deleteItem(p, 11690, pi.getItemSlot(p, 11690), 1);
-			p.addSkillXP(100, 12);
-			pi.addItem(p, 11698, 1);
-			p.frames.sendMessage(p, "You attach the Godsword Blade and Hilt together...");
-			p.frames.sendMessage(p, "...and get a Saradomin Godsword!");
-		}
-		if (itemUsed == 11708 && usedWith == 11690 || itemUsed == 11690 && usedWith == 11708) {
-			pi.deleteItem(p, 11708, pi.getItemSlot(p, 11708), 1);
-			pi.deleteItem(p, 11690, pi.getItemSlot(p, 11690), 1);
-			p.addSkillXP(100, 12);
-			pi.addItem(p, 11700, 1);
-			p.frames.sendMessage(p, "You attach the Godsword Blade and Hilt together...");
-			p.frames.sendMessage(p, "...and get a Zamorak Godsword!");
-		}
-		// End of Godsword Making
-
 		// ====================================== FLETCHING
 		// ==================================
 

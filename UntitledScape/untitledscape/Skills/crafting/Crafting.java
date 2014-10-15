@@ -55,6 +55,18 @@ public class Crafting {
 			}
 		}
 	}
+	
+	public static void craftGodsword(int xp, int godswordbladeid, int godswordhiltid, int processeditemid, String itemname, Player p, PlayerItems pi) {
+		pi.deleteItem(p, 11702, pi.getItemSlot(p, 11702), 1);
+		pi.deleteItem(p, 11690, pi.getItemSlot(p, 11690), 1);
+		
+		p.addSkillXP(100 * p.skillLvl[12], 12);
+		
+		pi.addItem(p, 11694, 1);
+		
+		p.frames.sendMessage(p, "You attach the Godsword Blade and Hilt together...");
+		p.frames.sendMessage(p, "...and get an "+ itemname + " Godsword!");
+	}
 
 	public static void genericCrafting(int xp, int req, int itemid, int processeditemid, int brokenitemid, String itemname, int animid, Player p, PlayerItems pi) {
 		if (req > p.skillLvl[12]) {

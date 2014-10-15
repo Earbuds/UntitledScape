@@ -35,7 +35,9 @@ public class NPC {
 				splitDSH = null;
 				splitCLN = null;
 				splitSCL = null;
-				if (!input.startsWith("/") && input.contains("=") && input.contains(",") && input.contains("-") && input.contains(":")) {
+				if (!input.startsWith("/") && input.contains("=")
+						&& input.contains(",") && input.contains("-")
+						&& input.contains(":")) {
 					try {
 						splitEQL = input.split("=");
 						if (Integer.parseInt(splitEQL[0]) == npcID) {
@@ -52,10 +54,12 @@ public class NPC {
 								int max = Integer.parseInt(splitDSH[1]);
 								int chance = Integer.parseInt(splitCLN[0]);
 								int outOf = Integer.parseInt(splitCLN[1]);
-								int amount = rand.nextInt((max - min) + 1) + min;
+								int amount = rand.nextInt((max - min) + 1)
+										+ min;
 								int ifDrop = rand.nextInt(outOf) + 1;
 								if (ifDrop <= chance) {
-									Engine.items.createGroundItem(item, amount, abSX, abSY, heightLevel, "");
+									Engine.items.createGroundItem(item, amount,
+											abSX, abSY, heightLevel, "");
 
 								}
 							}
@@ -289,7 +293,9 @@ public class NPC {
 
 		requestFaceCoords(pX, pY);
 
-		if (n.absX > pX + 15 || n.absY > pY + 15 || n.absX < pX - 15 || n.absY < pY - 15 || n.heightLevel < p.heightLevel || n.heightLevel > p.heightLevel) {
+		if (n.absX > pX + 15 || n.absY > pY + 15 || n.absX < pX - 15
+				|| n.absY < pY - 15 || n.heightLevel < p.heightLevel
+				|| n.heightLevel > p.heightLevel) {
 			if (p.FamiliarID > 0 || p.FamiliarType > 0) {
 				requestGFX(1315, 0);
 			}
@@ -443,7 +449,8 @@ public class NPC {
 				animUpdateReq = true;
 				for (Player ps : Engine.players) {
 					if (ps != null) {
-						if (ps.absX < absX + 2 && ps.absY < absY + 2 && ps.absX > absX - 2 && ps.absY > absY - 2) {
+						if (ps.absX < absX + 2 && ps.absY < absY + 2
+								&& ps.absX > absX - 2 && ps.absY > absY - 2) {
 							ps.requestGFX(437, 0);
 							ps.appendHit(1 + Misc.random(9), 0);
 						}

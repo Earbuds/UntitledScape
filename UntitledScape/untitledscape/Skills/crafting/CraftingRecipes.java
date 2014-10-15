@@ -103,6 +103,38 @@ public class CraftingRecipes {
 				break;
 			}
 		}
+		
+		if (usedWith == 11690) {
+			switch (itemUsed) {
+			case 11702:
+				Crafting.craftGodsword(100, usedWith, itemUsed, 11694, "Armadyl", p, pi);
+				
+			case 11704:
+				Crafting.craftGodsword(100, usedWith, itemUsed, 11696, "Bandos", p, pi);
+				
+			case 11706:
+				Crafting.craftGodsword(100, usedWith, itemUsed, 11696, "Saradomin", p, pi);
+				
+			case 11708:
+				Crafting.craftGodsword(100, usedWith, itemUsed, 11696, "Zamorak", p, pi);
+			}
+		}
+		
+		if (itemUsed == 11690) {
+			switch (usedWith) {
+			case 11702:
+				Crafting.craftGodsword(100, itemUsed, usedWith, 11694, "Armadyl", p, pi);
+				
+			case 11704:
+				Crafting.craftGodsword(100, itemUsed, usedWith, 11696, "Bandos", p, pi);
+				
+			case 11706:
+				Crafting.craftGodsword(100, itemUsed, usedWith, 11696, "Saradomin", p, pi);
+				
+			case 11708:
+				Crafting.craftGodsword(100, itemUsed, usedWith, 11696, "Zamorak", p, pi);
+			}
+		}
 	}
 
 }
