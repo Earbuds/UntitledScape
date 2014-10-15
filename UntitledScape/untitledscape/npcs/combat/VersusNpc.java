@@ -1,11 +1,9 @@
 package untitledscape.npcs.combat;
 
+import untitledscape.Engine;
 import untitledscape.Server;
 import untitledscape.npcs.*;
-import untitledscape.rs2.*;
 import untitledscape.util.*;
-
-
 
 public class VersusNpc {
 
@@ -23,7 +21,7 @@ public class VersusNpc {
 	 * NPC vs NPC combat system melee.
 	 */
 	public void appendMelee() {
-		NPC n1 = Server.engine.npcs[n.npcEnemy];
+		NPC n1 = Engine.npcs[n.npcEnemy]; // Server.engine.npcs
 		if (n == null || n1 == null) {
 			resetAttack();
 			return;

@@ -1,0 +1,11 @@
+#############
+## Eclipse ##
+#############
+
+UntitledScape/bin/
+.metadata/
+UntitledScape/.settings/
+UntitledScape/.classpath
+UntitledScape/.project
+.recommenders/
+

@@ -5,9 +5,9 @@ package untitledscape.io;
 
 import untitledscape.Engine;
 import untitledscape.Server;
-import untitledscape.ClanChat.ClanList;
-import untitledscape.ClanChat.ClanMain;
 import untitledscape.Skills.*;
+import untitledscape.clanchat.ClanList;
+import untitledscape.clanchat.ClanMain;
 import untitledscape.io.packets.*;
 import untitledscape.npcs.*;
 import untitledscape.players.Magic;

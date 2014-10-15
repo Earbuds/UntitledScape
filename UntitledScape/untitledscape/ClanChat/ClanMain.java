@@ -1,4 +1,4 @@
-package untitledscape.ClanChat;
+package untitledscape.clanchat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.io.*;
 
 import untitledscape.Engine;
 import untitledscape.Server;
-import untitledscape.ClanChat.ClanList;
-import untitledscape.ClanChat.inChat;
+import untitledscape.clanchat.ClanList;
+import untitledscape.clanchat.InChat;
 import untitledscape.players.Player;
 import untitledscape.util.Misc;
 import untitledscape.util.Stream;
@@ -195,7 +195,7 @@ public class ClanMain {
 		    continue;
 		}
 		if(!l.isInClan(p)) {
-	            l.inChat.add(new inChat(p.username));
+	            l.inChat.add(new InChat(p.username));
 		} else {
 		    l.setIn(p);
 		}

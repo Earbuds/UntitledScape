@@ -9,7 +9,7 @@
  * Created by Davidi2
  */
 
-package untitledscape.GrandExchange;
+package untitledscape.grandexchange;
 
 import java.io.*;
 import java.util.*;

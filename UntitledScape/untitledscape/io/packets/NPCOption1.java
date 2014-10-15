@@ -2,7 +2,7 @@ package untitledscape.io.packets;
 
 import untitledscape.Engine;
 import untitledscape.Skills.*;
-import untitledscape.Skills.Hunter.Implings;
+import untitledscape.Skills.hunter.Implings;
 import untitledscape.io.*;
 import untitledscape.npcs.*;
 import untitledscape.players.Player;

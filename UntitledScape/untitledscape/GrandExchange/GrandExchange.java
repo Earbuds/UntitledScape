@@ -1,6 +1,6 @@
 // TODO fix GrandExchange
 
-package untitledscape.GrandExchange;
+package untitledscape.grandexchange;
 
 import java.util.List;
 import java.util.ArrayList;

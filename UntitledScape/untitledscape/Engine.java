@@ -2,8 +2,8 @@ package untitledscape;
 
 import java.net.Socket;
 
-import untitledscape.GrandExchange.*;
 import untitledscape.content.*;
+import untitledscape.grandexchange.*;
 import untitledscape.io.*;
 import untitledscape.io.packets.*;
 import untitledscape.npcs.NPC;

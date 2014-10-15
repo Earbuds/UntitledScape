@@ -1,4 +1,4 @@
-package untitledscape.Skills.Hunter;
+package untitledscape.Skills.hunter;
 
 import untitledscape.Engine;
 import untitledscape.players.Player;

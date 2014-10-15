@@ -1,5 +1,7 @@
 package untitledscape.npcs.update;
 
+import untitledscape.players.Player;
+
 public class Followers {
 
 	Player p;

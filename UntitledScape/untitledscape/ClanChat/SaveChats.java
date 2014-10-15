@@ -1,10 +1,10 @@
 
-package untitledscape.ClanChat;
+package untitledscape.clanchat;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import untitledscape.ClanChat.ClanMain;
+import untitledscape.clanchat.ClanMain;
 import untitledscape.players.Player;
 
 public class SaveChats implements Runnable {

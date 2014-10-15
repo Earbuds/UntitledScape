@@ -1,14 +1,12 @@
 package untitledscape.io;
 
 import java.io.*;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 
 import untitledscape.Engine;
 import untitledscape.Server;
-import untitledscape.ClanChat.ClanList;
-import untitledscape.ClanChat.ClanMain;
 import untitledscape.Skills.*;
+import untitledscape.clanchat.ClanList;
+import untitledscape.clanchat.ClanMain;
 import untitledscape.io.Frames;
 import untitledscape.io.packets.ClanChat;
 import untitledscape.net.Protect;

@@ -227,16 +227,16 @@ public class ActionButtons implements Packet {
 			case 52:
 				p.chosenSkill = 23;
 				break;
-			case 28:
-				p.frames.removeShownInterface(p);
-				p.frames.removeChatboxInterface(p);
-				p.randomEvent();
-				break;
-			case 2:
-				p.frames.removeShownInterface(p);
-				p.frames.removeChatboxInterface(p);
-				p.randomEvent2();
-				break;
+			//case 28: Commented out randomEvent()
+			//	p.frames.removeShownInterface(p);
+			//	p.frames.removeChatboxInterface(p);
+			//	p.randomEvent();
+			//	break;
+			//case 2:
+			//	p.frames.removeShownInterface(p);
+			//	p.frames.removeChatboxInterface(p);
+			//	p.randomEvent2();
+			//	break;
 			}
 			break;
 		case 274:
@@ -1745,195 +1745,146 @@ public class ActionButtons implements Packet {
 				case 125: // Attack
 					p.setCoords(2851, 3548, 0);
 					/*
-					 * if(!p.leveledUp[0]){ p.skillMenu = 1;
-					 * p.frames.setConfig(p, 965, 1); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 10); }
+					 * if(!p.leveledUp[0]){ p.skillMenu = 1; p.frames.setConfig(p, 965, 1); } else { lvlup = true; p.frames.setConfig(p, 1230, 10); }
 					 */
 					break;
 				case 126: // Strength
 					p.setCoords(2851, 3548, 0);
 					/*
-					 * if(!p.leveledUp[2]){ p.skillMenu = 2;
-					 * p.frames.setConfig(p, 965, 2); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 20); }
+					 * if(!p.leveledUp[2]){ p.skillMenu = 2; p.frames.setConfig(p, 965, 2); } else { lvlup = true; p.frames.setConfig(p, 1230, 20); }
 					 */
 					break;
 				case 127: // Defence
 					p.setCoords(2851, 3548, 0);
 					/*
-					 * if(!p.leveledUp[1]){ p.skillMenu = 5;
-					 * p.frames.setConfig(p, 965, 5); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 40); }
+					 * if(!p.leveledUp[1]){ p.skillMenu = 5; p.frames.setConfig(p, 965, 5); } else { lvlup = true; p.frames.setConfig(p, 1230, 40); }
 					 */
 					break;
 				case 128: // Ranged
 					p.setCoords(2671, 3425, 0);
 					/*
-					 * if(!p.leveledUp[4]){ p.skillMenu = 3;
-					 * p.frames.setConfig(p, 965, 3); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 30); }
+					 * if(!p.leveledUp[4]){ p.skillMenu = 3; p.frames.setConfig(p, 965, 3); } else { lvlup = true; p.frames.setConfig(p, 1230, 30); }
 					 */
 					break;
 				case 129: // Prayer
 					p.setCoords(3051, 3490, 0);
 					/*
-					 * if(!p.leveledUp[5]){ p.skillMenu = 7;
-					 * p.frames.setConfig(p, 965, 7); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 60); }
+					 * if(!p.leveledUp[5]){ p.skillMenu = 7; p.frames.setConfig(p, 965, 7); } else { lvlup = true; p.frames.setConfig(p, 1230, 60); }
 					 */
 					break;
 				case 130: // Magic
 					p.setCoords(2609, 3092, 0);
 					/*
-					 * if(!p.leveledUp[6]){ p.skillMenu = 4;
-					 * p.frames.setConfig(p, 965, 4); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 33); }
+					 * if(!p.leveledUp[6]){ p.skillMenu = 4; p.frames.setConfig(p, 965, 4); } else { lvlup = true; p.frames.setConfig(p, 1230, 33); }
 					 */
 					break;
 				case 131: // Runecrafting
 					p.setCoords(2609, 3092, 0);
 					/*
-					 * if(!p.leveledUp[20]){ p.skillMenu = 12;
-					 * p.frames.setConfig(p, 965, 12); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 100); }
+					 * if(!p.leveledUp[20]){ p.skillMenu = 12; p.frames.setConfig(p, 965, 12); } else { lvlup = true; p.frames.setConfig(p, 1230, 100); }
 					 */
 					break;
 				case 132: // Construction
 					p.setCoords(2544, 3095, 0);
 					/*
-					 * if(!p.leveledUp[21]){ p.skillMenu = 22;
-					 * p.frames.setConfig(p, 965, 22); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 698); }
+					 * if(!p.leveledUp[21]){ p.skillMenu = 22; p.frames.setConfig(p, 965, 22); } else { lvlup = true; p.frames.setConfig(p, 1230, 698); }
 					 */
 					break;
 				case 133: // Hitpoints
 					p.setCoords(2851, 3548, 0);
 					/*
-					 * if(!p.leveledUp[3]){ p.skillMenu = 6;
-					 * p.frames.setConfig(p, 965, 6); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 50); }
+					 * if(!p.leveledUp[3]){ p.skillMenu = 6; p.frames.setConfig(p, 965, 6); } else { lvlup = true; p.frames.setConfig(p, 1230, 50); }
 					 */
 					break;
 				case 134: // Agility
 					p.setCoords(2552, 3556, 0);
 					/*
-					 * if(!p.leveledUp[16]){ p.skillMenu = 8;
-					 * p.frames.setConfig(p, 965, 8); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 65); }
+					 * if(!p.leveledUp[16]){ p.skillMenu = 8; p.frames.setConfig(p, 965, 8); } else { lvlup = true; p.frames.setConfig(p, 1230, 65); }
 					 */
 					break;
 				case 135: // Herblore
 					p.setCoords(2924, 3483, 0);
 					/*
-					 * if(!p.leveledUp[15]){ p.skillMenu = 9;
-					 * p.frames.setConfig(p, 965, 9); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 75); }
+					 * if(!p.leveledUp[15]){ p.skillMenu = 9; p.frames.setConfig(p, 965, 9); } else { lvlup = true; p.frames.setConfig(p, 1230, 75); }
 					 */
 					break;
 				case 136: // Thieving
 					p.setCoords(2663, 3307, 0);
 					/*
-					 * if(!p.leveledUp[17]){ p.skillMenu = 10;
-					 * p.frames.setConfig(p, 965, 10); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 80); }
+					 * if(!p.leveledUp[17]){ p.skillMenu = 10; p.frames.setConfig(p, 965, 10); } else { lvlup = true; p.frames.setConfig(p, 1230, 80); }
 					 */
 					break;
 				case 137: // Crafting
 					p.setCoords(2933, 3285, 0);
 					/*
-					 * if(!p.leveledUp[12]){ p.skillMenu = 11;
-					 * p.frames.setConfig(p, 965, 11); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 90); }
+					 * if(!p.leveledUp[12]){ p.skillMenu = 11; p.frames.setConfig(p, 965, 11); } else { lvlup = true; p.frames.setConfig(p, 1230, 90); }
 					 */
 					break;
 				case 138: // Fletching
 					p.setCoords(2609, 3092, 0);
 					/*
-					 * if(!p.leveledUp[9]){ p.skillMenu = 19;
-					 * p.frames.setConfig(p, 965, 19); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 665); }
+					 * if(!p.leveledUp[9]){ p.skillMenu = 19; p.frames.setConfig(p, 965, 19); } else { lvlup = true; p.frames.setConfig(p, 1230, 665); }
 					 */
 					break;
 				case 139: // Slayer
 					p.setCoords(2844, 3539, 0);
 					/*
-					 * if(!p.leveledUp[18]){ p.skillMenu = 20;
-					 * p.frames.setConfig(p, 965, 20); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 673); }
+					 * if(!p.leveledUp[18]){ p.skillMenu = 20; p.frames.setConfig(p, 965, 20); } else { lvlup = true; p.frames.setConfig(p, 1230, 673); }
 					 */
 					break;
 				case 140: // Hunter
 					p.setCoords(2525, 2914, 0);
 					/*
-					 * if(!p.leveledUp[22]){ p.skillMenu = 23;
-					 * p.frames.setConfig(p, 965, 23); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 689); }
+					 * if(!p.leveledUp[22]){ p.skillMenu = 23; p.frames.setConfig(p, 965, 23); } else { lvlup = true; p.frames.setConfig(p, 1230, 689); }
 					 */
 					break;
 				case 141: // Mining
 					p.setCoords(2941, 3281, 0);
 					/*
-					 * if(!p.leveledUp[14]){ p.skillMenu = 13;
-					 * p.frames.setConfig(p, 965, 13); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 110); }
+					 * if(!p.leveledUp[14]){ p.skillMenu = 13; p.frames.setConfig(p, 965, 13); } else { lvlup = true; p.frames.setConfig(p, 1230, 110); }
 					 */
 					break;
 				case 142: // Smithing
 					p.setCoords(2933, 3285, 0);
 					/*
-					 * if(!p.leveledUp[13]){ p.skillMenu = 14;
-					 * p.frames.setConfig(p, 965, 14); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 115); }
+					 * if(!p.leveledUp[13]){ p.skillMenu = 14; p.frames.setConfig(p, 965, 14); } else { lvlup = true; p.frames.setConfig(p, 1230, 115); }
 					 */
 					break;
 				case 143: // Fishing
 					p.setCoords(2834, 3436, 0);
 					/*
-					 * if(!p.leveledUp[10]){ p.skillMenu = 15;
-					 * p.frames.setConfig(p, 965, 15); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 120); }
+					 * if(!p.leveledUp[10]){ p.skillMenu = 15; p.frames.setConfig(p, 965, 15); } else { lvlup = true; p.frames.setConfig(p, 1230, 120); }
 					 */
 					break;
 				case 144: // Cooking
 					p.setCoords(2813, 3436, 0);
 					/*
-					 * if(!p.leveledUp[7]){ p.skillMenu = 16;
-					 * p.frames.setConfig(p, 965, 16); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 641); }
+					 * if(!p.leveledUp[7]){ p.skillMenu = 16; p.frames.setConfig(p, 965, 16); } else { lvlup = true; p.frames.setConfig(p, 1230, 641); }
 					 */
 					break;
 				case 145: // Firemaking
 					p.setCoords(2702, 3424, 0);
 					/*
-					 * if(!p.leveledUp[11]){ p.skillMenu = 17;
-					 * p.frames.setConfig(p, 965, 17); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 649); }
+					 * if(!p.leveledUp[11]){ p.skillMenu = 17; p.frames.setConfig(p, 965, 17); } else { lvlup = true; p.frames.setConfig(p, 1230, 649); }
 					 */
 					break;
 				case 146: // Woodcutting
 					p.setCoords(2702, 3424, 0);
 					/*
-					 * if(!p.leveledUp[8]){ p.skillMenu = 18;
-					 * p.frames.setConfig(p, 965, 18); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 660); }
+					 * if(!p.leveledUp[8]){ p.skillMenu = 18; p.frames.setConfig(p, 965, 18); } else { lvlup = true; p.frames.setConfig(p, 1230, 660); }
 					 */
 					break;
 				case 147: // Farming
 					p.setCoords(2807, 3464, 0);
 					/*
-					 * if(!p.leveledUp[19]){ p.skillMenu = 21;
-					 * p.frames.setConfig(p, 965, 21); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 681); }
+					 * if(!p.leveledUp[19]){ p.skillMenu = 21; p.frames.setConfig(p, 965, 21); } else { lvlup = true; p.frames.setConfig(p, 1230, 681); }
 					 */
 					break;
 				case 148: // Summoning
 					p.setCoords(2894, 3434, 0);
 
 					/*
-					 * if(!p.leveledUp[23]){ p.skillMenu = 24;
-					 * p.frames.setConfig(p, 965, 24); } else { lvlup = true;
-					 * p.frames.setConfig(p, 1230, 705); }
-					 * p.frames.showInterface(p, 499);
+					 * if(!p.leveledUp[23]){ p.skillMenu = 24; p.frames.setConfig(p, 965, 24); } else { lvlup = true; p.frames.setConfig(p, 1230, 705); } p.frames.showInterface(p, 499);
 					 */
 					break;
 				}
@@ -2613,17 +2564,17 @@ public class ActionButtons implements Packet {
 			 */
 			if (buttonId == 0) {
 				if (packetId == 233) // 1
-				Engine.playerBank.bankItem(p, buttonId2, 1);
+					Engine.playerBank.bankItem(p, buttonId2, 1);
 				else if (packetId == 21) // 5
-				Engine.playerBank.bankItem(p, buttonId2, 5);
+					Engine.playerBank.bankItem(p, buttonId2, 5);
 				else if (packetId == 169) // 10
-				Engine.playerBank.bankItem(p, buttonId2, 10);
+					Engine.playerBank.bankItem(p, buttonId2, 10);
 				else if (packetId == 214) // lastX
-				Engine.playerBank.bankItem(p, buttonId2, p.bankX);
+					Engine.playerBank.bankItem(p, buttonId2, p.bankX);
 				else if (packetId == 232) // all
-				Engine.playerBank.bankItem(p, buttonId2, Engine.playerItems.invItemCount(p, p.items[buttonId2]));
+					Engine.playerBank.bankItem(p, buttonId2, Engine.playerItems.invItemCount(p, p.items[buttonId2]));
 				else if (packetId == 173) // X
-				p.uinput.request(3, buttonId2);
+					p.uinput.request(3, buttonId2);
 				else if (packetId == 90) // examine
 					p.frames.sendMessage(p, Engine.items.getItemDescription(p.items[buttonId2]));
 			}
@@ -2635,19 +2586,19 @@ public class ActionButtons implements Packet {
 			 */
 			if (buttonId == 73) {
 				if (packetId == 233) // 1
-				Engine.playerBank.bankWithdraw(p, buttonId2, 1);
+					Engine.playerBank.bankWithdraw(p, buttonId2, 1);
 				else if (packetId == 21) // 5
-				Engine.playerBank.bankWithdraw(p, buttonId2, 5);
+					Engine.playerBank.bankWithdraw(p, buttonId2, 5);
 				else if (packetId == 169) // 10
-				Engine.playerBank.bankWithdraw(p, buttonId2, 10);
+					Engine.playerBank.bankWithdraw(p, buttonId2, 10);
 				else if (packetId == 214) // lastX
-				Engine.playerBank.bankWithdraw(p, buttonId2, p.bankX);
+					Engine.playerBank.bankWithdraw(p, buttonId2, p.bankX);
 				else if (packetId == 173) { // X
 					p.uinput.request(2, buttonId2);
 				} else if (packetId == 232) // all
-				Engine.playerBank.bankWithdraw(p, buttonId2, p.bankItemsN[buttonId2]);
+					Engine.playerBank.bankWithdraw(p, buttonId2, p.bankItemsN[buttonId2]);
 				else if (packetId == 133) // all but one
-				Engine.playerBank.bankWithdraw(p, buttonId2, p.bankItemsN[buttonId2] - 1);
+					Engine.playerBank.bankWithdraw(p, buttonId2, p.bankItemsN[buttonId2] - 1);
 				else if (packetId == 90) // examine
 					p.frames.sendMessage(p, Engine.items.getItemDescription(p.bankItems[buttonId2]));
 				break;

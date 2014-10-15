@@ -1,8 +1,8 @@
 package untitledscape.io.packets;
 
 import untitledscape.Engine;
-import untitledscape.Skills.Crafting;
 import untitledscape.Skills.Firemaking;
+import untitledscape.Skills.crafting.Crafting;
 import untitledscape.players.Player;
 import untitledscape.players.items.PlayerItems;
 import untitledscape.util.Misc;

@@ -1,4 +1,4 @@
-package untitledscape.ClanChat;
+package untitledscape.clanchat;
 
 // Fixed by Earbuds on 10/6/2014
 
@@ -27,7 +27,7 @@ public class ClanList {
     public List<String> rank4 = new ArrayList<String>(200);
     public List<String> rank5 = new ArrayList<String>(200);
     public List<String> rank6 = new ArrayList<String>(200);
-    public List<inChat> inChat = new ArrayList<inChat>(200);
+    public List<InChat> inChat = new ArrayList<InChat>(200);
 
     public void lootShare(boolean bool) {
 	lootShareOn = bool;
@@ -36,7 +36,7 @@ public class ClanList {
 	    	if(p == null || p.disconnected[0]) {
 		    continue;
 	    	}
-	    	for(inChat l2 : inChat) {
+	    	for(InChat l2 : inChat) {
 		    if(l2 == null || l2.name.equals("")) {
 		    	continue;
 		    }
@@ -52,7 +52,7 @@ public class ClanList {
 	    	if(p == null || p.disconnected[0]) {
 		    continue;
 	    	}
-	    	for(inChat l2 : inChat) {
+	    	for(InChat l2 : inChat) {
 		    if(l2 == null || l2.name.equals("")) {
 		    	continue;
 		    }
@@ -67,7 +67,7 @@ public class ClanList {
     }
 
     public void getChance(Player p) {
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || !l.name.equals(p.username) || l.status == 1) {
 		continue;
 	    }
@@ -79,7 +79,7 @@ public class ClanList {
     public String getHighest() {
 	int highest = 0;
 	String player = "";
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || l.status == 1) {
 		continue;
 	    }
@@ -88,7 +88,7 @@ public class ClanList {
 		player = l.name;
 	    }
 	}
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || l.status == 1) {
 		continue;
 	    }
@@ -118,7 +118,7 @@ public class ClanList {
 
     public int clanNumber() {
 	int count = 0;
-	for(inChat i : inChat) {
+	for(InChat i : inChat) {
 	    if(i == null || i.equals("") || i.status == 1) {
 		continue;
 	    }
@@ -129,7 +129,7 @@ public class ClanList {
 
     public void leaveChat(Player p) {
 	// String s = "";
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null) {
 		continue;
 	    }
@@ -228,7 +228,7 @@ public class ClanList {
 	    if(p == null || p.disconnected[0]) {
 		continue;
 	    }
-	    for(inChat l2 : inChat) {
+	    for(InChat l2 : inChat) {
 		if(l2 == null || l2.name.equals("")) {
 		    continue;
 		}
@@ -241,7 +241,7 @@ public class ClanList {
 
 		p.stream.writeUnsignedByte(kickReq);
 		p.stream.writeSignedByte(clanNumber());
-		for(inChat l : inChat) {
+		for(InChat l : inChat) {
 		    if(l == null || l.name.equals("") || l.status == 1) {
 			continue;
 		    }
@@ -292,7 +292,7 @@ public class ClanList {
 	    if(p == null || p.disconnected[0]) {
 		continue;
 	    }
-	    for(inChat l2 : inChat) {
+	    for(InChat l2 : inChat) {
 		if(l2 == null || l2.name.equals("")) {
 		    continue;
 		}
@@ -305,7 +305,7 @@ public class ClanList {
     }
 
     public boolean isInClan(Player p) {
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || l.name.equals("")) {
 		continue;
 	    }
@@ -317,7 +317,7 @@ public class ClanList {
     }
 
     public boolean isInClan2(String p) {
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || l.name.equals("")) {
 		continue;
 	    }
@@ -329,7 +329,7 @@ public class ClanList {
     }
 
     public void setIn(Player p) {
-	for(inChat l : inChat) {
+	for(InChat l : inChat) {
 	    if(l == null || !l.name.equals(p.username)) {
 		continue;
 	    }

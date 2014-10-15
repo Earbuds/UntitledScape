@@ -1,15 +1,15 @@
 package untitledscape.Skills;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.util.Random;
-
 import untitledscape.Engine;
-import untitledscape.Server;
-import untitledscape.io.Frames;
 import untitledscape.players.Player;
-import untitledscape.players.items.*;
 import untitledscape.util.Misc;
+
+//import java.io.BufferedWriter; Unused Imports
+//import java.io.FileWriter;
+//import java.util.Random;
+//import untitledscape.Server;
+//import untitledscape.io.Frames;
+//import untitledscape.players.items.*;
 
 public class Fishing {
 	public Player p;

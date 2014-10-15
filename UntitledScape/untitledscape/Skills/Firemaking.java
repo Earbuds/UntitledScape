@@ -1,11 +1,11 @@
 package untitledscape.Skills;
 
-import java.io.*;
-import java.util.concurrent.TimeUnit;
-
-import untitledscape.Engine;
 import untitledscape.players.Player;
 import untitledscape.players.items.PlayerItems;
+
+// import java.io.*; Unused Imports
+//import java.util.concurrent.TimeUnit;
+//import untitledscape.Engine;
 
 public class Firemaking {
 

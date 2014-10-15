@@ -2,10 +2,10 @@ package untitledscape;
 
 import java.io.*;
 
-import untitledscape.ClanChat.ClanList;
-import untitledscape.ClanChat.ClanMain;
-import untitledscape.ClanChat.SaveChats;
-import untitledscape.ClanChat.inChat;
+import untitledscape.clanchat.ClanList;
+import untitledscape.clanchat.ClanMain;
+import untitledscape.clanchat.SaveChats;
+import untitledscape.clanchat.InChat;
 import untitledscape.net.SocketListener;
 import untitledscape.players.PlayerSave;
 import untitledscape.util.Misc;

@@ -1,7 +1,7 @@
 /*
  *@Author - zach
  */
-package untitledscape.GrandExchange;
+package untitledscape.grandexchange;
 
 
 import java.io.*;
@@ -22,7 +22,7 @@ public class GrandExchangeLoader {
 
 	public void saveOffers() throws Exception {
 		int i = 0;
-		for (untitledscape.GrandExchange.Offer Offer : GrandExchange.offerList) { // Offer Offer : GrandExchange.offerList
+		for (untitledscape.grandexchange.Offer Offer : GrandExchange.offerList) { // Offer Offer : GrandExchange.offerList
 			if (Offer == null) {
 				continue;
 			}
@@ -118,7 +118,7 @@ public class GrandExchangeLoader {
 				if (id != 0) {
 					GrandExchange.offerList.add(new Offer(id, item, amount, currentAmount, price, type, owner, completed, slot));
 				}
-				for (untitledscape.GrandExchange.Offer l : GrandExchange.offerList) { // Offer l : GrandExchange.offerList
+				for (untitledscape.grandexchange.Offer l : GrandExchange.offerList) { // Offer l : GrandExchange.offerList
 					if (l == null) {
 						continue;
 					}

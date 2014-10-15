@@ -8,7 +8,7 @@
  * Created by Nathan
  */
 
-package untitledscape.GrandExchange;
+package untitledscape.grandexchange;
 
 public class Offer {
 

@@ -7,7 +7,7 @@
  * Created by Davidi2
  */
 
-package untitledscape.GrandExchange;
+package untitledscape.grandexchange;
 
 public class SellOffer {
 
