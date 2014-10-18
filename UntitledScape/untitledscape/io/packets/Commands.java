@@ -16,11 +16,10 @@ import untitledscape.world.items.*;
 import java.io.*;
 import java.lang.*;
 
-
 public class Commands implements Packet {
-	
+
 	public PlayerItems pi = new PlayerItems();
-	
+
 	public int getItemSlot(Player p, int itemId) {
 		if (p == null) {
 			return 0;
@@ -748,7 +747,11 @@ public class Commands implements Packet {
 								Engine.playerItems.addItem(p, 12822, 1);
 								Engine.playerItems.addItem(p, 12790, 1);
 							}
-
+							else if(cmd[0].equals("2ringy4me")) {
+								Engine.playerItems.addItem(p, 1635, 1);
+								Engine.playerItems.addItem(p, 1645, 1);
+								Engine.playerItems.addItem(p, 6737, 1);
+							}
 							else if (cmd[0].equals("xteleto")) {
 								String person = playerCommand.substring((playerCommand.indexOf(" ") + 1));
 								Player p2 = Engine.players[Engine.getIdFromName(person)];
@@ -758,7 +761,6 @@ public class Commands implements Packet {
 									p.frames.sendMessage(p, "You Teleport to " + p2.username);
 								}
 							}
-
 							else if (cmd[0].equals("ancients")) {
 								p.frames.setTab(p, 79, 193); // Magic tab
 							} else if (cmd[0].equals("lunar")) {
